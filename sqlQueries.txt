@@ -1,0 +1,13 @@
+create table users(
+user_name varchar(20) not null,
+PRIMARY KEY (user_name));
+
+create table scores(
+round_id int not null auto_increment,
+player varchar(20) not null,
+game_total int not null,
+game_won int not null,
+winning_rate float not null,
+PRIMARY KEY (round_id),
+FOREIGN key (player) REFERENCES users (user_name));
+

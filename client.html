@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+<title>Rock Paper Scissors</title>
+<link rel="stylesheet" type="text/css" href="rps.css">
+</head>
+<body><div id="main">
+<script src="/socket.io/socket.io.js"></script>
+<h1>Welcome to Game Rock Paper and Scissors</h1>
+
+<div id="userContainer" style="display;">
+<p>
+	Enter username: <input type="text" id="username" placeholder="Username"/>
+	<button id="st">Start Game</button>
+	<button id="qt">Quit Game</button>
+</p>
+<p id="finalPrompt"></p>
+</div>
+
+<div id="gameContainer" style="display:none;">
+	<div id="game">
+		<p id="welcome"></p>
+		<img src="img/r.jpg" id="rPic" value="rock" name="pic" />
+		<img src="img/p.jpg" id="pPic" value="paper" name="pic" />
+		<img src="img/s.jpg" id="sPic" value="scissors" name="pic" />
+		<p id="detail"></p>
+		<p id="statistics"></p>
+	</div>
+</div>
+
+<script src="client.js"></script>
+</div></body>
+</html>
